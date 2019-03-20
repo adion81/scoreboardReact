@@ -12,3 +12,168 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+  
+  /* outline: 1px solid red; */
+}
+.scoreboard{
+  width: 60%;
+  margin: 5% auto;
+  background-color: rgb(105, 76, 235);
+  border-radius: 10px;
+  padding-bottom: 1%;
+}
+header{
+  color: white;
+  display: grid;
+  grid-template-columns: 20% 55% 25%;
+}
+.stats{
+  margin: 15% 0 0 20%;
+}
+header h1{
+  grid-column: 2;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 5%;
+}
+.stopwatch{
+  grid-column: 3;
+  text-align: center;
+  display: grid;
+  vertical-align: middle;
+  grid-template-columns:  10% 35% 10% 35% 10%;
+  grid-template-rows: 5% 25% 35% 30% 5%;
+  background-color: rgb(105, 17, 105);
+  border-top-right-radius: 10px;
+  padding: 5%;
+}
+.stopwatch h2{
+  grid-row: 2;
+  grid-column: 2 / span 3;
+  font-size: 100%;
+}
+.stopwatch-time{
+  grid-row: 3;
+  grid-column: 3;
+  font-size: 125%;
+}
+.stopwatch button:first-of-type{
+  grid-row: 4;
+  grid-column: 2;
+}
+.stopwatch button:last-of-type{
+  grid-row: 4;
+  grid-column: 4;
+
+}
+.stopwatch button{
+  font-size: 90%;
+  padding-top: 3%;
+  padding-bottom: 20%;
+  border-radius: 7px;
+  background-color: rgb(66, 0, 128);
+  border: 1px solid rgb(128, 128, 233);
+  color: white;
+  font-weight: bold;
+}
+.stopwatch button:hover{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.player{
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 5% 60% 10% 25%;
+  grid-template-rows: 5% 90% 5%;
+  width: 100%;
+  font-size: 200%;
+
+}
+.player-name{
+  grid-column: 2;
+  grid-row: 2;
+}
+.remove-player{
+  grid-column: 1;
+  grid-row: 2;
+  color: red;
+  font-size: 0%;
+  border: none;
+  background-color: whitesmoke;
+  transition: .1s;
+}
+.remove-player:hover{
+  font-size: 100%;
+  transition: .1s;
+  cursor: pointer;
+}
+.counter{
+  grid-column: 4;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  margin-left: .5%;
+  margin-right: -1.6%;
+}
+.counter-action{
+  width: 100%;
+  font-size: 100%;
+}
+.counter-score{
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0 10% 0 10%;
+  vertical-align: middle;
+  text-align: center;
+}
+.increment{
+  grid-column: 3;
+  grid-row: 1;
+  background-color: lightgray;
+  padding-bottom: 10%;
+  margin: -2%;
+}
+.decrement{
+  grid-column: 1;
+  grid-row: 1;
+  background-color: lightgray;
+  padding-bottom: 10%;
+  margin: -2%;
+}
+.increment:hover{
+  background-color: rgb(3, 145, 3);
+}
+.decrement:hover{
+  background-color: red;
+}
+.form{
+  text-align: center;
+  vertical-align: middle;
+}
+.form input:first-of-type{
+  width: 60%;
+  font-size: 150%;
+  margin: 3%;
+  vertical-align: middle;
+  background-color: rgb(89, 6, 138);
+  color: white;
+  border-radius: 5px;
+  padding: 1%;
+}
+.form input:last-of-type{
+  font-size: 150%;
+  background-color: rgb(89, 6, 138);
+  color: white;
+  font-weight: bold;
+  padding: 2%;
+  margin: 2%;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
